@@ -1,0 +1,1535 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Smart Waste Bin</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!--Including Chart.js in HTML file-->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+  <style>
+    .chart-container {
+        width: 33%;
+        display: inline-block;
+        margin: 10px;
+        justify-content: center;
+    }
+    .charts-wrapper {
+            white-space: nowrap; /* Prevents charts from wrapping to next line */
+            font-size: 0; /* Removes whitespace between inline-block elements */
+    }
+
+    .chart-containers {
+      display: flex;
+      justify-content: center;
+    }
+  </style>
+  
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top ">
+    <div class="container-fluid">
+
+      <div class="row justify-content-center">
+        <div class="col-xl-9 d-flex align-items-center justify-content-lg-between">
+          <h1 class="logo me-auto me-lg-0"><a href="index.html">Smart Waste Bin</a></h1>
+          <!-- Uncomment below if you prefer to use an image logo -->
+          <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
+
+          <nav id="navbar" class="navbar order-last order-lg-0">
+            <ul>
+              <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+              <li><a class="nav-link scrollto" href="#about">Description</a></li>
+              <li><a class="nav-link scrollto" href="#services">Analysis</a></li>
+            <!--  <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li>-->
+             <!-- <li><a class="nav-link scrollto" href="#pricing">Contacts</a></li>
+             <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
+                <ul>
+                  <li><a href="#">Drop Down 1</a></li>
+                  <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
+                    <ul>
+                      <li><a href="#">Deep Drop Down 1</a></li>
+                      <li><a href="#">Deep Drop Down 2</a></li>
+                      <li><a href="#">Deep Drop Down 3</a></li>
+                      <li><a href="#">Deep Drop Down 4</a></li>
+                      <li><a href="#">Deep Drop Down 5</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Drop Down 2</a></li>
+                  <li><a href="#">Drop Down 3</a></li>
+                  <li><a href="#">Drop Down 4</a></li>
+                </ul>
+              </li>-->
+              <li><a class="nav-link scrollto" href="#contact">Location</a></li>
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+          </nav><!-- .navbar -->
+
+         <!-- <a href="#about" class="get-started-btn scrollto">Get Started</a>-->
+        </div>
+      </div>
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex flex-column justify-content-center">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-xl-8">
+          <h1>Smart Waste Bin - Efficient Waste Management System</h1>
+          <h2>To enhance environmental sustainability and quality of life.</h2>
+          <!--<a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox play-btn mb-4"></a>-->
+          <a href="assets/img/MetalsDetection.mp4" class="glightbox play-btn mb-4"></a>
+        </div>
+      </div>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= Description(About Us) Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="section-title">
+          <!--<h2>About Us</h2>-->
+          <h2>Description</h2>
+          <p>The smart waste bin system is an advanced and integrated approach to modern waste management that leverages cutting-edge technologies to provide real-time monitoring and analysis.</p> <!--The system’s hardware components, including Arduino Mega, Raspberry Pi 4, sensors, PiCamera, and GSM module, work together seamlessly to segregate waste and monitor the environment.-->
+        </div>
+
+        <div class="row content">
+          <div class="col-lg-6">
+            <p>
+              The system’s hardware components including Arduino Mega, Raspberry Pi 4, Sensors and PiCamera work together seamlessly to segregate waste and monitor the environment.
+            </p>
+            <ul>
+              <li><i class="ri-check-double-line"></i> Segregation of waste into 3 categories takes place.</li>
+              <li><i class="ri-check-double-line"></i> Real-time status of the bin is being measured and displayed.</li>
+              <li><i class="ri-check-double-line"></i> The system is an ideal solution for solid waste management.</li>
+            </ul>
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0">
+            <p>
+              The physical model collects data from sensors and PiCamera which triggers actions through Arduino Mega.
+              The image classification model on Raspberry Pi 4 processes images and provides waste-type information.
+              The physical model sends data to the web application for storage and analysis. The web application displays 
+              real-time information, alerts officials, and allows for system monitoring and management.
+            </p>
+            <a href="#" class="btn-learn-more">Learn More</a>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Us Section -->
+
+    <!-- ======= Services Section ======= -->
+<!--   <section id="services" class="services">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Analysis</h2>
+          <p>The system’s core component is an image classification
+            model trained on machine learning algorithms, which accurately identifies various waste types based on captured
+            images. This model not only provides immediate feedback
+            but also generates a comprehensive record of historical waste
+            disposal instances through a designated folder for stored
+            images. Additionally, a detailed log of image names and their
+            predicted classes is created, serving as an audit trail and
+            providing valuable insights for troubleshooting and continuous improvement.</p>
+        </div>-->
+
+        <!--
+        <div class="row">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bxl-dribbble"></i></div>
+              <h4><a href="">Lorem Ipsum</a></h4>
+              <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-file"></i></div>
+              <h4><a href="">Sed ut perspiciatis</a></h4>
+              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-tachometer"></i></div>
+              <h4><a href="">Magni Dolores</a></h4>
+              <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-world"></i></div>
+              <h4><a href="">Nemo Enim</a></h4>
+              <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-slideshow"></i></div>
+              <h4><a href="">Dele cardo</a></h4>
+              <p>Quis consequatur saepe eligendi voluptatem consequatur dolor consequuntur</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-arch"></i></div>
+              <h4><a href="">Divera don</a></h4>
+              <p>Modi nostrum vel laborum. Porro fugit error sit minus sapiente sit aspernatur</p>
+            </div>
+          </div>
+          -->
+
+ <!--       </div>
+
+      </div>
+    </section> End Services Section -->-->
+
+    <!-- ======= Cta Section ======= -->
+    <section id="cta" class="cta">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-9 text-center text-lg-start">
+            <h3>Call To Action</h3>
+            <p> When the containers get filled upto a certain level, the fill level will detect and send an alert message to waste collectors to collect the garbage disposed.</p>
+          </div>
+          <div class="col-lg-3 cta-btn-container text-center">
+            <a class="cta-btn align-middle" href="#">Call To Action</a>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Cta Section -->
+
+
+
+
+    <!-- ======= Analysis(Services) Section ======= -->
+  <section id="services" class="services">
+    <div class="container">   
+    <div class="section-title">
+      <h2>Analysis</h2>
+      <p>The system’s core component is an image classification
+        model trained on machine learning algorithms, which accurately identifies various waste types based on captured
+        images. This model not only provides immediate feedback
+        but also generates a comprehensive record of historical waste
+        disposal instances through a designated folder for stored
+        images. Additionally, a detailed log of image names and their
+        predicted classes is created, serving as an audit trail and
+        providing valuable insights for troubleshooting and continuous improvement.</p>
+    </div>
+
+    <div>
+      <canvas id="myChart" width="1100px" height="570" style="width: 900px;"></canvas>
+    </div>
+
+    <script>
+
+        document.addEventListener('DOMContentLoaded', function() {
+                var ctx = document.getElementById('myChart').getContext('2d');
+                var myChart = new Chart(ctx, {
+                    type: 'bar',
+                    data: {
+                        labels: ['Biodegradable', 'Non-Biodegradable'],
+                        datasets: [{
+                            label: 'Analysis of Wastes',
+                            data: [0, 0], // Initialize with zeros
+                            backgroundColor: [
+                                'rgba(75, 192, 192, 0.5)', // Green for Biodegradable
+                                'rgba(255, 99, 132, 0.5)', // Red for Non-Biodegradable
+                            ],
+                            borderColor: [
+                                'rgba(75, 192, 192, 1)',
+                                'rgba(255, 99, 132, 1)',
+                            ],
+                            borderWidth: 1
+                        }]
+                    },
+                    options: {
+                        scales: {
+                            yAxes: [{
+                                ticks: {
+                                    beginAtZero: true
+                                }
+                            }]
+                        }
+                    }
+                });
+
+        // Fetch the CSV file
+        Papa.parse('csv/pro.csv', {
+            download: true,
+            header: true,
+            complete: function(results) {
+                // Initialize counts for bio and non-bio wastes
+                var bioCount = 0;
+                var nonBioCount = 0;
+
+                // Iterate through the CSV data
+                results.data.forEach(function(row) {
+                    // Increment counts based on the value in 'Analysis of Waste' column
+                    if (row['PredictedClass'] === 'Biodegradable') {
+                        bioCount++;
+                    } else if (row['PredictedClass'] === 'Non-Biodegradable') {
+                        nonBioCount++;
+                    }
+                });
+
+                // Update the chart data with the counts
+                myChart.data.datasets[0].data = [bioCount, nonBioCount];
+                myChart.update();
+            }
+        });
+    });
+     
+
+
+
+
+
+
+
+/*Demo Display Code*/
+/*  document.addEventListener('DOMContentLoaded', function() {
+            var ctx = document.getElementById('myChart').getContext('2d');
+            var myChart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: ['Biodegradable', 'Non-Biodegradable'],
+                    datasets: [{
+                        label: 'Analysis of Wastes',
+                        data: [getRandomInt(1, 50), getRandomInt(1, 50)],
+                        backgroundColor: [
+                            'rgba(75, 192, 192, 0.5)', // Green for Biodegradable
+                            'rgba(255, 99, 132, 0.5)', // Red for Non-Biodegradable
+                        ],
+                        borderColor: [
+                            'rgba(75, 192, 192, 1)',
+                            'rgba(255, 99, 132, 1)',
+                        ],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    scales: {
+                        yAxes: [{
+                            ticks: {
+                                beginAtZero: true
+                            }
+                        }]
+                    }
+                }
+            });
+        });
+
+        // Function to generate random integer between min and max (inclusive)
+        function getRandomInt(min, max) {
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        }*/
+
+
+    
+
+    </script>
+
+</section>
+<!-- End About Us(BarChart) Section -->
+ 
+
+
+
+<!-- ======= Features Section(Fill level Sensor) ======= -->
+
+            <!-- Fill level sensors(Doughnuts) -->
+            <!--<div class="charts-wrapper">
+                <div class="chart-container">
+                    <canvas id="chart1"></canvas>
+                </div>
+                <div class="chart-container">
+                    <canvas id="chart2"></canvas>
+                </div>
+                <div class="chart-container">
+                    <canvas id="chart3"></canvas>
+                </div>
+            </div>-->
+            <!--<div class="doughnut-container" style="display: flex;">-->
+
+<section id="features" class="features">
+    <div class="container">
+        <div class="icon-box mt-5 mt-lg-0">
+            <h4>Fill Level Sensors</h4>
+            <p>
+                Level sensors are devices installed within compartments to monitor the fill level of substances stored within those compartments.
+                These sensors are crucial in various industries where precise monitoring of substance levels is necessary for safety, efficiency or regulatory compliance reasons.
+            </p>
+
+            <!--<div class="doughnut-container" style="display: flex; justify-content: center;">
+                <div class="chart-container">
+                    <canvas id="doughnutChart1" width="200" height="200"></canvas>
+                </div>
+                <div class="chart-container">
+                    <canvas id="doughnutChart2" width="200" height="200"></canvas>
+                </div>
+                <div class="chart-container">
+                    <canvas id="doughnutChart3" width="200" height="200"></canvas>
+                </div>
+            </div>-->
+
+            <div> 
+              <canvas id="horizontalChart" ></canvas>
+            </div>
+
+            <script>
+                      //Code for Integrated 
+                        // Function to fetch and process CSV data
+    // Function to fetch and process CSV data
+    async function fetchData() {
+      const response = await fetch('csv/pro.csv'); // Fetch CSV file
+      const data = await response.text(); // Get text data from response
+      const rows = data.trim().split('\n'); // Split text into rows and remove leading/trailing whitespace
+      const lastRow = rows[rows.length - 1]; // Get the last row
+
+      // Split the last row into columns
+      const columns = lastRow.split(',');
+
+      // Extract data for the last row
+      const label = columns[1]; // First column is the label
+      const bioFillLevel = parseFloat(columns[3]); // Second column is biodegradable fill level
+      const metalsFillLevel = parseFloat(columns[4]); // Third column is metals fill level
+      const nonMetalsFillLevel = parseFloat(columns[5]); // Fourth column is non-metals fill level
+
+      return { label, bioFillLevel, metalsFillLevel, nonMetalsFillLevel };
+    }
+
+    // Function to create and render the chart
+    async function renderChart() {
+      const { label, bioFillLevel, metalsFillLevel, nonMetalsFillLevel } = await fetchData();
+
+      // Random colors for the data sets
+      const bioColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
+      const metalsColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
+      const nonMetalsColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
+
+      // Chart data
+      const data = {
+        labels: [label],
+        datasets: [
+          {
+            label: 'Biodegradable',
+            data: [bioFillLevel],
+            backgroundColor: bioColor,
+          },
+          {
+            label: 'Metals',
+            data: [metalsFillLevel],
+            backgroundColor: metalsColor,
+          },
+          {
+            label: 'Non-metals',
+            data: [nonMetalsFillLevel],
+            backgroundColor: nonMetalsColor,
+          },
+        ]
+      };
+
+      // Chart configuration
+      const config = {
+        type: 'bar', // Changed to horizontalBar for horizontal bars
+        data: data,
+        options: {
+          indexAxis: 'y', // Set indexAxis to 'y' for horizontal bars
+          scales: {
+            x: {
+              beginAtZero: true
+            }
+          }
+        }
+      };
+
+      // Render the chart
+      var horizontalChart = new Chart(
+        document.getElementById('horizontalChart'),
+        config
+      );
+    }
+
+    // Call the function to render the chart
+    renderChart();
+
+                  // Generate random values for the data sets(Display code for Demo Horizontal Bar chart)
+                  /*const biodegradableValue = Math.floor(Math.random() * 100);
+                  const metalsValue = Math.floor(Math.random() * 100);
+                  const nonMetalsValue = Math.floor(Math.random() * 100);
+
+                  // Random colors for the data sets
+                  const biodegradableColor = '#' + Math.floor(Math.random()*16777215).toString(16);
+                  const metalsColor = '#' + Math.floor(Math.random()*16777215).toString(16);
+                  const nonMetalsColor = '#' + Math.floor(Math.random()*16777215).toString(16);
+
+                  // Create data object
+                  const data = {
+                    labels: ['Biodegradable', 'Metals', 'Non-Metals'],
+                    datasets: [{
+                      label: 'Fill Level',
+                      data: [biodegradableValue, metalsValue, nonMetalsValue],
+                      backgroundColor: [biodegradableColor, metalsColor, nonMetalsColor],
+                    }]
+                  };
+
+                  // Chart configuration
+                  const config = {
+                    type: 'bar', // Changed from 'horizontalBar' to 'bar'
+                    data: data,
+                    options: {
+                      indexAxis: 'y', // Adjusted to display bars horizontally
+                      scales: {
+                        x: {
+                          beginAtZero: true
+                        }
+                      }
+                    }
+                  };
+
+                  // Render the chart
+                  var horizontalChart = new Chart(
+                    document.getElementById('horizontalChart'),
+                    config
+                  );*/
+            </script>
+
+
+        </div>
+    </div>
+
+  </section>
+    <!--<script>
+
+         
+/*document.addEventListener('DOMContentLoaded', function() {
+        // Fetch the CSV file
+        Papa.parse('csv/test.csv', {
+            download: true,
+            header: true,
+            complete: function(results) {
+                // Get the last row of the CSV data
+                const lastRow = results.data[results.data.length - 1];
+
+                // Extract fill level values for bio, metals, and non-metals
+                const fillLevelBio = parseInt(lastRow['Fill level(bio)']);
+                const fillLevelMetals = parseInt(lastRow['Fill level(metals)']);
+                const fillLevelNonMetals = parseInt(lastRow['Fill level(non-metals)']);
+
+                // Data for the three doughnut charts
+                const data1 = {
+                    labels: ['Biodegradable'],
+                    datasets: [{
+                        data: [fillLevelBio],
+                        backgroundColor: ['#ff6384']
+                    }]
+                };
+
+                const data2 = {
+                    labels: ['Metals'],
+                    datasets: [{
+                        data: [fillLevelMetals],
+                        backgroundColor: ['#36a2eb']
+                    }]
+                };
+
+                const data3 = {
+                    labels: ['Non-metals'],
+                    datasets: [{
+                        data: [fillLevelNonMetals],
+                        backgroundColor: ['#ffce56']
+                    }]
+                };
+
+                // Options for the doughnut charts
+                const options = {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    cutoutPercentage: 50
+                };
+
+                // Create the three doughnut charts
+                new Chart(document.getElementById('doughnutChart1'), {
+                    type: 'doughnut',
+                    data: data1,
+                    options: options
+                });
+
+                new Chart(document.getElementById('doughnutChart2'), {
+                    type: 'doughnut',
+                    data: data2,
+                    options: options
+                });
+
+                new Chart(document.getElementById('doughnutChart3'), {
+                    type: 'doughnut',
+                    data: data3,
+                    options: options
+                });
+            }
+        });
+    });
+*/
+
+    /*Demo Display Code*/
+ /*     document.addEventListener('DOMContentLoaded', function() {
+       // Data for the three doughnut charts
+       const data1 = {
+           labels: ['Biodegradable'],
+           datasets: [{
+               data: [30],
+               backgroundColor: ['#ff6384']
+           }]
+       };
+
+       const data2 = {
+           labels: ['Metals'],
+           datasets: [{
+               data: [50],
+               backgroundColor: ['#36a2eb']
+           }]
+       };
+
+       const data3 = {
+           labels: ['Non-metals'],
+           datasets: [{
+               data: [70],
+               backgroundColor: ['#ffce56']
+           }]
+       };
+
+       // Options for the doughnut charts
+       const options = {
+           responsive: true,
+           maintainAspectRatio: false,
+           cutoutPercentage: 50
+       };
+
+       // Create the three doughnut charts
+       new Chart(document.getElementById('doughnutChart1'), {
+           type: 'doughnut',
+           data: data1,
+           options: options
+       });
+
+       new Chart(document.getElementById('doughnutChart2'), {
+           type: 'doughnut',
+           data: data2,
+           options: options
+       });
+
+       new Chart(document.getElementById('doughnutChart3'), {
+           type: 'doughnut',
+           data: data3,
+           options: options
+       });
+   });*/
+</script>-->
+
+
+<!-- End Features Section -->
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ======= Features Section ======= -->
+<!--<section id="features" class="features">
+  <div class="container">
+    <div class="icon-box mt-5 mt-lg-0">
+      <h4>Temperature Sensors</h4>
+        <p>
+          Temperature sensors are devices that measure temperature levels accurately.  
+          They play a crucial role in various industries, scientific research, and everyday applications by measuring and monitoring temperature levels accurately.</p>
+    </div>
+
+  <div class="chart-containers">
+    <canvas id="temperatureChart" width="200" height="100"></canvas>
+  </div>
+  
+    <script>
+        // Example data
+        var exampleData = [
+            { timestamp: '00:00', temperature: 15 },
+            { timestamp: '06:00', temperature: 13 },
+            { timestamp: '12:00', temperature: 22 },
+            { timestamp: '18:00', temperature: 20 },
+            { timestamp: '23:00', temperature: 14 }
+        ];
+
+        // Function to create line chart
+        function createLineChart(data) {
+            var timestamps = data.map(function(row) {
+                return row.timestamp;
+            });
+            var temperatures = data.map(function(row) {
+                return parseFloat(row.temperature);
+            });
+
+            var ctx = document.getElementById('temperatureChart').getContext('2d');
+            var temperatureChart = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: timestamps,
+                    datasets: [{
+                        label: 'Temperature (°C)',
+                        data: temperatures,
+                        borderColor: 'blue',
+                        backgroundColor: 'rgba(0, 0, 255, 0.1)',
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    scales: {
+                        x: {
+                            title: {
+                                display: true,
+                                text: 'Time'
+                            }
+                        },
+                        y: {
+                            title: {
+                                display: true,
+                                text: 'Temperature (°C)'
+                            }
+                        }
+                    }
+                }
+            });
+        }
+
+        // Create line chart with example data
+        createLineChart(exampleData);
+    </script>
+  
+  </div>
+
+</section>-->
+<!-- End Features Section -->
+
+
+
+
+<!-- ======= Features Section ======= -->
+<section id="features" class="features">
+  <div class="container">
+    <div class="icon-box mt-5 mt-lg-0">
+      <h4>Gas Detection Sensor</h4>
+        <p>
+          Gas detection sensors play a critical role in various industries and applications where the presence of certain gases can pose risks to safety, health, and the environment. 
+          These sensors are designed to detect and monitor the concentration of specific gases in the container. </p>
+
+        <!--<div class="chart-containers">
+            <canvas id="myPieChart" width="30" height="300"></canvas>
+        </div>-->
+
+      <div style="width: 700px; height: 650px; margin: 0 auto;">
+          <!--<canvas id="pieChart" width="600" height="600"></canvas>-->
+          <!--<canvas id="barChart" width="900" height="900"></canvas>-->
+           <!--<canvas id="pieChart" width="700" height="650"></canvas>-->
+           <canvas id="lineChart" style="height: 500px;" ></canvas>
+      </div>
+      
+  
+      <script>
+    
+         // Function to fetch and process CSV data
+    async function fetchData() {
+      const response = await fetch('csv/pro.csv'); // Fetch CSV file
+      const data = await response.text(); // Get text data from response
+      const rows = data.trim().split('\n'); // Split text into rows and remove leading/trailing whitespace
+
+      // Extract the last 5 rows of data
+      const lastRows = rows.slice(-5);
+
+      // Extract 'Filename' column (2nd column) for x-axis labels
+      const labels = lastRows.map(row => {
+        const columns = row.split(',');
+        return columns[1].trim(); // Extract and trim 'Filename' value
+      });
+
+      // Extract 'GasBIo' column (last column) for y-axis data
+      const gasData = lastRows.map(row => {
+        const columns = row.split(',');
+        return parseInt(columns[6]); // Extract and parse 'GasBIo' value as integer
+      });
+
+      return { labels, gasData };
+    }
+
+    // Function to create and render the chart
+    async function renderChart() {
+      const { labels, gasData } = await fetchData();
+
+      // Chart data
+      const data = {
+        labels: labels,
+        datasets: [{
+          label: 'Presence of Gas',
+          data: gasData,
+          borderColor: 'blue',
+          fill: false
+        }]
+      };
+
+      // Chart configuration
+      const config = {
+        type: 'line',
+        data: data,
+        options: {
+          scales: {
+            y: {
+              beginAtZero: true,
+              max: 12
+            }
+          }
+        }
+      };
+
+      // Render the chart
+      var lineChart = new Chart(
+        document.getElementById('lineChart'),
+        config
+      );
+    }
+
+    // Call the function to render the chart
+    renderChart();
+
+
+
+
+         /* document.addEventListener('DOMContentLoaded', async function() {
+              // Fetch data from CSV file
+              const response = await fetch('csv/test.csv');
+              const textData = await response.text();
+
+              // Process CSV data
+              const gasData = processData(textData);
+
+              console.log(gasData); // Log the processed data
+
+              // Data for the pie chart
+              const data = {
+                  labels: Object.keys(gasData), // Gas names for labels
+                  datasets: [{
+                      data: Object.values(gasData), // Occurrence counts as data
+                      backgroundColor: generateRandomColors(Object.keys(gasData).length) // Generate random colors for segments
+                  }]
+              };
+
+              console.log(data); // Log the data for the chart
+
+              // Options for the pie chart
+              const options = {
+                  responsive: true,
+                  maintainAspectRatio: false
+              };
+
+              // Create the pie chart
+              new Chart(document.getElementById('pieChart'), {
+                  type: 'pie',
+                  data: data,
+                  options: options
+              });
+          });
+
+          // Function to process CSV data and count the occurrences of each gas
+          function processData(csvData) {
+              const rows = csvData.trim().split('\n'); // Split text into rows
+              const gasCount = {}; // Object to store gas occurrences
+
+              // Process each row starting from the second row (skipping header)
+              for (let i = 1; i < rows.length; i++) {
+                  const row = rows[i];
+                  const columns = row.split(','); // Split row into columns
+                  const gas = columns[4].trim().toLowerCase(); // Get gas name from the fifth column
+                  if (gas in gasCount) {
+                      gasCount[gas]++; // Increment count if gas exists
+                  } else {
+                      gasCount[gas] = 1; // Initialize count if gas is encountered for the first time
+                  }
+              }
+
+              return gasCount;
+          }
+
+          // Function to generate random colors for pie segments
+          function generateRandomColors(count) {
+              const colors = [];
+              for (let i = 0; i < count; i++) {
+                  const color = '#' + Math.floor(Math.random() * 16777215).toString(16); // Generate random color
+                  colors.push(color);
+              }
+              return colors;
+          }
+          LASTTT*/
+
+
+  /*Integrated display for Bar chart for Gas*/
+ /*   document.addEventListener('DOMContentLoaded', async function() {
+        // Fetch data from CSV file
+        const response = await fetch('csv/test.csv');
+        const textData = await response.text();
+
+        // Process CSV data
+        const gasData = processData(textData);
+
+        console.log(gasData); // Log the processed data
+
+        // Data for the bar chart
+        const data = {
+            labels: Object.keys(gasData), // Gas names for x-axis
+            datasets: [{
+                label: 'Gas Occurrences',
+                data: Object.values(gasData), // Occurrence counts as data for y-axis
+                backgroundColor: generateRandomColors(Object.keys(gasData).length) // Generate random colors for bars
+            }]
+        };
+
+        console.log(data); // Log the data for the chart
+
+        // Options for the bar chart
+        const options = {
+            responsive: true,
+            maintainAspectRatio: false,
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    title: {
+                        display: true,
+                        text: 'Occurrences'
+                    }
+                },
+                x: {
+                    title: {
+                        display: true,
+                        text: 'Gas'
+                    }
+                }
+            }
+        };
+
+        // Create the bar chart
+        new Chart(document.getElementById('barChart'), {
+            type: 'bar',
+            data: data,
+            options: options
+        });
+    });
+
+    // Function to process CSV data and count the occurrences of each gas
+    function processData(csvData) {
+        const rows = csvData.trim().split('\n'); // Split text into rows
+        const gasCount = {}; // Object to store gas occurrences
+
+        // Process each row starting from the second row (skipping header)
+        for (let i = 1; i < rows.length; i++) {
+            const row = rows[i];
+            const columns = row.split(','); // Split row into columns
+            const gas = columns[4].trim().toLowerCase(); // Get gas name from the fifth column
+            if (gas in gasCount) {
+                gasCount[gas]++; // Increment count if gas exists
+            } else {
+                gasCount[gas] = 1; // Initialize count if gas is encountered for the first time
+            }
+        }
+
+        return gasCount;
+    }
+
+    // Function to generate random colors for bars
+    function generateRandomColors(count) {
+        const colors = [];
+        for (let i = 0; i < count; i++) {
+            const color = '#' + Math.floor(Math.random() * 16777215).toString(16); // Generate random color
+            colors.push(color);
+        }
+        return colors;
+    }*/
+
+
+
+
+
+         
+/*Demo Display Code*/
+/*document.addEventListener('DOMContentLoaded', function() {
+              // Data for the pie chart
+              const data = {
+                  labels: ['LPG', 'Propane', 'Methane', 'Alcohol', 'Hydrogen', 'CO'],
+                  datasets: [{
+                      data: generateRandomData(),
+                      backgroundColor: ['#ff6384', '#36a2eb', '#ffce56', '#4bc0c0', '#9966ff', '#ff7f50']
+                  }]
+              };
+  
+              // Options for the pie chart
+              const options = {
+                  responsive: true,
+                  maintainAspectRatio: false
+              };
+  
+              // Create the pie chart
+              new Chart(document.getElementById('pieChart'), {
+                  type: 'pie',
+                  data: data,
+                  options: options
+              });
+          });
+  
+          // Function to generate random data values
+          function generateRandomData() {
+              return [
+                  Math.floor(Math.random() * 100), // LPG
+                  Math.floor(Math.random() * 100), // Propane
+                  Math.floor(Math.random() * 100), // Methane
+                  Math.floor(Math.random() * 100), // Alcohol
+                  Math.floor(Math.random() * 100), // Hydrogen
+                  Math.floor(Math.random() * 100)  // CO
+              ];
+          }*/
+      </script>
+    
+       
+  
+</section>
+<!-- End Features Section -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+    <!-- ======= Clients Section ======= 
+    <section id="clients" class="clients">
+      
+    </section>-->
+    <!--End Clients Section -->
+
+
+
+
+
+    <!-- ======= Counts Section ======= -->
+    <section id="counts" class="counts">
+      <div class="container">
+
+        <div class="text-center title">
+          <!--<h3>Data achieved from smart waste bin</h3>-->
+          <!--<p>Iusto et labore modi qui sapiente xpedita tempora et aut non ipsum consequatur illo.</p>-->
+        </div>
+
+        <div class="row counters position-relative">
+
+          <!--<div class="col-lg-3 col-6 text-center">
+            <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="2" class="purecounter"></span>
+            <p>No. of timestamps collected</p>
+          </div>-->
+
+          <div class="col-lg-3 col-6 text-center">
+            <span id="purecounter" class="purecounter"></span>
+            <p>No. of timestamps collected</p>
+          </div>
+        
+          <script>
+            document.addEventListener('DOMContentLoaded', async function() {
+              // Fetch data from CSV file
+              const response = await fetch('csvfile/test2.csv');
+              const textData = await response.text();
+        
+              // Split text data into lines and count the number of lines
+              const lineCount = textData.trim().split('\n').length;
+        
+              // Calculate the value for data-purecounter-end
+              const purecounterEnd = lineCount - 1;
+        
+              // Set the data-purecounter-end attribute of the span element
+              const purecounterSpan = document.getElementById('purecounter');
+              purecounterSpan.setAttribute('data-purecounter-end', purecounterEnd);
+        
+              // Initialize Purecounter
+              new PureCounter(purecounterSpan);
+            });
+          </script>
+
+          <!--<div class="col-lg-3 col-6 text-center">
+            <span data-purecounter-start="0" data-purecounter-end="92" data-purecounter-duration="2" class="purecounter"></span>
+            <p>Bio-degradable waste</p>
+          </div>-->
+          <div class="col-lg-3 col-6 text-center" id="counterDiv">
+            <span id="counter" data-purecounter-start="0" data-purecounter-end="0" data-purecounter-duration="2" class="purecounter"></span>
+            <p>Bio-degradable waste</p>
+          </div>
+        
+          <script>
+            // Function to fetch and process CSV data
+            async function fetchData() {
+              const response = await fetch('csv/pro.csv'); // Fetch CSV file
+              const data = await response.text(); // Get text data from response
+              const rows = data.trim().split('\n'); // Split text into rows and remove leading/trailing whitespace
+        
+              // Count the number of 'Biodegradable' entries in the 'PredictedClass' column
+              const count = rows.reduce((total, row) => {
+                const columns = row.split(',');
+                if (columns[2].trim() === 'Biodegradable') { // Check if the 3rd column (index 2) is 'Biodegradable'
+                  total++;
+                }
+                return total;
+              }, 0);
+        
+              return count;
+            }
+        
+            // Function to update the counter with the fetched data
+            async function updateCounter() {
+              const count = await fetchData();
+              const counterElement = document.getElementById('counter');
+              counterElement.dataset.purecounterEnd = count; // Set the value of data-purecounter-end
+              counterElement.innerText = count; // Update the counter text
+            }
+        
+            // Call the function to update the counter
+            updateCounter();
+          </script>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-purecounter-start="0" data-purecounter-end="5" data-purecounter-duration="1" class="purecounter"></span>
+            <p>Metallic waste</p>
+          </div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-purecounter-start="0" data-purecounter-end="8" data-purecounter-duration="1" class="purecounter"></span>
+            <p>Non-Metallic waste</p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Counts Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+   <!-- <section id="portfolio" class="portfolio">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Portfolio</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-app">App</li>
+              <li data-filter=".filter-card">Card</li>
+              <li data-filter=".filter-web">Web</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>App 1</h4>
+              <p>App</p>
+              <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Web 3</h4>
+              <p>Web</p>
+              <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>App 2</h4>
+              <p>App</p>
+              <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 2"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Card 2</h4>
+              <p>Card</p>
+              <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 2"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Web 2</h4>
+              <p>Web</p>
+              <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 2"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>App 3</h4>
+              <p>App</p>
+              <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 3"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Card 1</h4>
+              <p>Card</p>
+              <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 1"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Card 3</h4>
+              <p>Card</p>
+              <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 3"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Web 3</h4>
+              <p>Web</p>
+              <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>--><!-- End Portfolio Section -->
+
+    <!-- ======= Pricing Section ======= -->
+    <!--<section id="pricing" class="pricing">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Pricing</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6">
+            <div class="box">
+              <h3>Free</h3>
+              <h4><sup>$</sup>0<span> / month</span></h4>
+              <ul>
+                <li>Aida dere</li>
+                <li>Nec feugiat nisl</li>
+                <li>Nulla at volutpat dola</li>
+                <li class="na">Pharetra massa</li>
+                <li class="na">Massa ultricies mi</li>
+              </ul>
+              <div class="btn-wrap">
+                <a href="#" class="btn-buy">Buy Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mt-4 mt-md-0">
+            <div class="box recommended">
+              <span class="recommended-badge">Recommended</span>
+              <h3>Business</h3>
+              <h4><sup>$</sup>19<span> / month</span></h4>
+              <ul>
+                <li>Aida dere</li>
+                <li>Nec feugiat nisl</li>
+                <li>Nulla at volutpat dola</li>
+                <li>Pharetra massa</li>
+                <li class="na">Massa ultricies mi</li>
+              </ul>
+              <div class="btn-wrap">
+                <a href="#" class="btn-buy">Buy Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mt-4 mt-lg-0">
+            <div class="box">
+              <h3>Developer</h3>
+              <h4><sup>$</sup>29<span> / month</span></h4>
+              <ul>
+                <li>Aida dere</li>
+                <li>Nec feugiat nisl</li>
+                <li>Nulla at volutpat dola</li>
+                <li>Pharetra massa</li>
+                <li>Massa ultricies mi</li>
+              </ul>
+              <div class="btn-wrap">
+                <a href="#" class="btn-buy">Buy Now</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>--><!-- End Pricing Section -->
+
+    <!-- ======= Faq Section ======= -->
+    <!--<section id="faq" class="faq">
+      <div class="container-fluid">
+
+        <div class="row">
+
+          <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch  order-2 order-lg-1">
+
+            <div class="content">
+              <h3>Frequently Asked <strong>Questions</strong></h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
+              </p>
+            </div>
+
+            <div class="accordion-list">
+              <ul>
+                <li>
+                  <a data-bs-toggle="collapse" class="collapse" data-bs-target="#accordion-list-1">Non consectetur a erat nam at lectus urna duis? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="accordion-list-1" class="collapse show" data-bs-parent=".accordion-list">
+                    <p>
+                      Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+                    </p>
+                  </div>
+                </li>
+
+                <li>
+                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-2" class="collapsed">Feugiat scelerisque varius morbi enim nunc? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="accordion-list-2" class="collapse" data-bs-parent=".accordion-list">
+                    <p>
+                      Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                    </p>
+                  </div>
+                </li>
+
+                <li>
+                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-3" class="collapsed">Dolor sit amet consectetur adipiscing elit? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="accordion-list-3" class="collapse" data-bs-parent=".accordion-list">
+                    <p>
+                      Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
+                    </p>
+                  </div>
+                </li>
+
+              </ul>
+            </div>
+
+          </div>
+
+          <div class="col-lg-5 align-items-stretch order-1 order-lg-2 img" style='background-image: url("assets/img/faq.jpg");'>&nbsp;</div>
+        </div>
+
+      </div>
+    </section>--><!-- End Faq Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Location</h2>
+          <!--<p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>-->
+        </div>
+      </div>
+
+      <div>
+        <iframe style="border:0; width: 100%; height: 350px;" src="https://maps.google.com/maps?q=Mar+Baselios+College+of+Engineering+and+Technology&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" allowfullscreen></iframe>
+        <!--<iframe style="border:0; width: 100%; height: 350px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" allowfullscreen></iframe>-->
+      </div>
+
+      <!--<div class="container">
+
+        <div class="row mt-5">
+
+          <div class="col-lg-4">
+            <div class="info">
+              <div class="address">
+                <i class="ri-map-pin-line"></i>
+                <h4>Location:</h4>
+                <p>A108 Adam Street, New York, NY 535022</p>
+              </div>
+
+              <div class="email">
+                <i class="ri-mail-line"></i>
+                <h4>Email:</h4>
+                <p>info@example.com</p>
+              </div>
+
+              <div class="phone">
+                <i class="ri-phone-line"></i>
+                <h4>Call:</h4>
+                <p>+1 5589 55488 55s</p>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-8 mt-5 mt-lg-0">
+
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>--><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <h3>Smart Waste Bin</h3>
+      <!--<p>Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime saepe commodi placeat.</p>
+      <div class="social-links">
+        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      </div>
+      <div class="copyright">
+        &copy; Copyright <strong><span>KnightOne</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">->>
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/knight-simple-one-page-bootstrap-template/ -->
+        <!--Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>-->
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+
+  
+
+
+
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

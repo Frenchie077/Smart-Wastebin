@@ -1,0 +1,16 @@
+Timestamp,Filename,PredictedClass,FilllevelBio,FilllevelMetal,FilllevelNonmetal,GasBIo
+24/04/22,image1,Non-Biodegradable,1,0,6,5
+24/04/22,image2,Biodegradable,7,9,7,0
+24/04/22,image3,Non-Biodegradable,0,1,7,1
+24/04/22,image4,Biodegradable,2,1,7,5
+24/04/22,image5,Non-Biodegradable,8,8,10,11
+24/04/22,image6,Biodegradable,2,10,1,12
+24/04/22,image7,Non-Biodegradable,3,2,0,7
+24/04/22,image8,Non-Biodegradable,9,10,10,12
+24/04/22,image9,Non-Biodegradable,10,3,7,11
+24/04/22,image10,Biodegradable,5,8,10,3
+24/04/22,image11,Biodegradable,4,5,0,2
+24/04/22,image12,Non-Biodegradable,8,5,6,1
+24/04/22,image13,Non-Biodegradable,9,1,2,12
+24/04/22,image14,Non-Biodegradable,5,1,5,8
+24/04/22,image15,Biodegradable,3,4,8,7

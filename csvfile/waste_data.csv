@@ -1,0 +1,11 @@
+Type of Waste,Fill Level Percentage,Gas Data
+metals,89,CO
+metals,60,CO2
+metals,82,CO2
+non-metals,85,CO2
+non-metals,52,CO2
+bio-degradable,34,CO
+bio-degradable,66,CO2
+metals,20,CO2
+non-metals,8,CO2
+bio-degradable,85,CO
